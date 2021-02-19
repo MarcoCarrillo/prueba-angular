@@ -8,6 +8,7 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { PagesComponent } from './pages/pages.component';
+import { PromesaComponent } from './pages/promesa/promesa.component';
 
 
 const routes:Routes = [
@@ -16,6 +17,7 @@ const routes:Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'promesa', component: PromesaComponent },
   { path: '', pathMatch: 'full', redirectTo: '/home' }
  ]},
  { path: 'login', component: LoginComponent },
