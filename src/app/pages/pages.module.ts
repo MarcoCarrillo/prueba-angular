@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { PromesaComponent } from './promesa/promesa.component';
+import { ObservableComponent } from './observable/observable.component';
 
 
 
@@ -18,7 +19,8 @@ import { PromesaComponent } from './promesa/promesa.component';
     DashboardComponent,
     HomeComponent,
     NotfoundComponent,
-    PromesaComponent
+    PromesaComponent,
+    ObservableComponent
   ],
   exports:[
     AboutComponent,
