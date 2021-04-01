@@ -7,19 +7,21 @@ import { HomeComponent } from './pages/home/home.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
-import { PagesComponent } from './pages/pages.component';
 import { PromesaComponent } from './pages/promesa/promesa.component';
 import { ObservableComponent } from './pages/observable/observable.component';
+import { UsuariosComponent } from './pages/usuarios/usuarios.component';
+import { PagesComponent } from './pages/pages.component';
 
 
 const routes:Routes = [
- {path: '', component: PagesComponent, children: [
+  {path: '', component: PagesComponent, children: [
   { path: 'about', component: AboutComponent }, //cada objeto del arreglo representa una ruta
   { path: 'contact', component: ContactComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'home', component: HomeComponent },
   { path: 'promesa', component: PromesaComponent },
   { path: 'observable', component: ObservableComponent },
+  {path: 'usuarios', component: UsuariosComponent},
   { path: '', pathMatch: 'full', redirectTo: '/home' }
  ]},
  { path: 'login', component: LoginComponent },

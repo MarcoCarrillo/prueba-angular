@@ -25,6 +25,10 @@ export class MenuService {
         {
           titulo: 'Contact',
           url: '/contact'
+        },
+        {
+          titulo: 'Usuarios',
+          url: '/usuarios'
         }
       ]
     }

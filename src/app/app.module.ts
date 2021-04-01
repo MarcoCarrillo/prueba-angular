@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
 import { AuthModule } from './auth/auth.module';
 import { PagesComponent } from './pages/pages.component';
+import { UsuariosComponent } from './pages/usuarios/usuarios.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -24,8 +26,8 @@ import { PagesComponent } from './pages/pages.component';
     PagesModule,
     AuthModule,
     BrowserModule,
-    AppRoutingModule
-    
+    AppRoutingModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

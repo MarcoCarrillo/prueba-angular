@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -8,11 +7,15 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { PromesaComponent } from './promesa/promesa.component';
 import { ObservableComponent } from './observable/observable.component';
 
-
+import { CommonModule } from '@angular/common';
+import { UsuariosComponent } from './usuarios/usuarios.component';
 
 
 
 @NgModule({
+  imports: [
+    CommonModule
+  ],
   declarations: [
     AboutComponent,
     ContactComponent,
@@ -20,7 +23,8 @@ import { ObservableComponent } from './observable/observable.component';
     HomeComponent,
     NotfoundComponent,
     PromesaComponent,
-    ObservableComponent
+    ObservableComponent,
+    UsuariosComponent
   ],
   exports:[
     AboutComponent,
@@ -28,9 +32,6 @@ import { ObservableComponent } from './observable/observable.component';
     DashboardComponent,
     HomeComponent,
     NotfoundComponent
-  ],
-  imports: [
-    CommonModule
   ]
 })
 export class PagesModule { }

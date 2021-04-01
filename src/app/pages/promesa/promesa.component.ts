@@ -45,9 +45,9 @@ export class PromesaComponent implements OnInit {
   obtenerUsuarios() {
     const promesa = new Promise((resolve, reject) => {
      
-      fetch('https://reqres.in/api/users')
+      fetch('https://servidor-nestjs.herokuapp.com/usuarios')
       .then(res=>res.json())
-      .then(res=>resolve(res.data) )
+      .then(res=>resolve(res) )
     });
     return promesa;
 
